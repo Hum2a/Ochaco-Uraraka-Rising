@@ -1,0 +1,208 @@
+{
+  "manifest_version": 3,
+  "name": "Ochaco Uraraka: Rising",
+  "description": "Ochaco Uraraka — Ochaco vs Himiko wallpaper, VS Toga soundtrack, pink/brown GX theme, broad web modding.",
+  "version": "1.0.0",
+  "icons": {
+    "512": "icon_512.png"
+  },
+  "developer": {
+    "name": "Humza Butt"
+  },
+  "mod": {
+    "schema_version": 1,
+    "license": "license.txt",
+    "payload": {
+      "wallpaper": {
+        "dark": {
+          "image": "wallpaper/Ochaco vs Himiko.mp4",
+          "first_frame": "wallpaper/first_frame_ochaco.jpeg",
+          "text_color": "#FCE4EC",
+          "text_shadow": "#4E342E"
+        },
+        "light": {
+          "image": "wallpaper/Ochaco vs Himiko.mp4",
+          "first_frame": "wallpaper/first_frame_ochaco.jpeg",
+          "text_color": "#4E342E",
+          "text_shadow": "#FCE4EC"
+        }
+      },
+      "background_music": [
+        "music/OCHAKO-URARAKA-VS-HIMIKO-TOGA.mp3"
+      ],
+      "theme": {
+        "dark": {
+          "gx_accent": { "h": 333, "s": 78, "l": 58 },
+          "gx_secondary_base": { "h": 16, "s": 42, "l": 16 }
+        },
+        "light": {
+          "gx_accent": { "h": 333, "s": 62, "l": 44 },
+          "gx_secondary_base": { "h": 22, "s": 38, "l": 88 }
+        }
+      },
+      "page_styles": [
+        {
+          "css": ["webmodding/ochaco-uraraka.css"],
+          "matches": ["https://*/*", "http://*/*"]
+        },
+        {
+          "css": ["webmodding/sites-01-google-youtube.css"],
+          "matches": [
+            "https://www.google.com/*",
+            "https://google.com/*",
+            "https://mail.google.com/*",
+            "https://drive.google.com/*",
+            "https://docs.google.com/*",
+            "https://calendar.google.com/*",
+            "https://maps.google.com/*",
+            "https://news.google.com/*",
+            "https://play.google.com/*",
+            "https://accounts.google.com/*",
+            "https://photos.google.com/*",
+            "https://meet.google.com/*",
+            "https://classroom.google.com/*",
+            "https://keep.google.com/*",
+            "https://translate.google.com/*",
+            "https://contacts.google.com/*",
+            "https://www.youtube.com/*",
+            "https://youtube.com/*",
+            "https://m.youtube.com/*",
+            "https://music.youtube.com/*"
+          ]
+        },
+        {
+          "css": ["webmodding/sites-02-social.css"],
+          "matches": [
+            "https://www.reddit.com/*",
+            "https://reddit.com/*",
+            "https://old.reddit.com/*",
+            "https://new.reddit.com/*",
+            "https://www.x.com/*",
+            "https://x.com/*",
+            "https://twitter.com/*",
+            "https://www.twitter.com/*",
+            "https://mobile.twitter.com/*",
+            "https://www.facebook.com/*",
+            "https://facebook.com/*",
+            "https://m.facebook.com/*",
+            "https://web.facebook.com/*",
+            "https://www.instagram.com/*",
+            "https://instagram.com/*",
+            "https://www.tiktok.com/*",
+            "https://tiktok.com/*",
+            "https://www.discord.com/*",
+            "https://discord.com/*",
+            "https://www.pinterest.com/*",
+            "https://pinterest.com/*",
+            "https://www.tumblr.com/*",
+            "https://tumblr.com/*",
+            "https://www.linkedin.com/*",
+            "https://linkedin.com/*",
+            "https://www.threads.net/*",
+            "https://threads.net/*"
+          ]
+        },
+        {
+          "css": ["webmodding/sites-03-dev.css"],
+          "matches": [
+            "https://github.com/*",
+            "https://gist.github.com/*",
+            "https://gitlab.com/*",
+            "https://stackoverflow.com/*",
+            "https://*.stackexchange.com/*",
+            "https://stackexchange.com/*",
+            "https://superuser.com/*",
+            "https://serverfault.com/*",
+            "https://askubuntu.com/*",
+            "https://math.stackexchange.com/*",
+            "https://news.ycombinator.com/*"
+          ]
+        },
+        {
+          "css": ["webmodding/sites-04-shopping.css"],
+          "matches": [
+            "https://www.amazon.com/*",
+            "https://amazon.com/*",
+            "https://www.amazon.co.uk/*",
+            "https://amazon.co.uk/*",
+            "https://www.amazon.de/*",
+            "https://amazon.de/*",
+            "https://www.amazon.ca/*",
+            "https://amazon.ca/*",
+            "https://www.amazon.co.jp/*",
+            "https://amazon.co.jp/*",
+            "https://www.amazon.fr/*",
+            "https://amazon.fr/*",
+            "https://www.amazon.es/*",
+            "https://amazon.es/*",
+            "https://www.amazon.it/*",
+            "https://amazon.it/*",
+            "https://www.amazon.in/*",
+            "https://amazon.in/*",
+            "https://www.amazon.com.au/*",
+            "https://amazon.com.au/*",
+            "https://www.ebay.com/*",
+            "https://ebay.com/*",
+            "https://www.ebay.co.uk/*",
+            "https://ebay.co.uk/*",
+            "https://www.ebay.de/*",
+            "https://ebay.de/*",
+            "https://www.paypal.com/*",
+            "https://paypal.com/*",
+            "https://www.apple.com/*",
+            "https://apple.com/*"
+          ]
+        },
+        {
+          "css": ["webmodding/sites-05-media.css"],
+          "matches": [
+            "https://www.netflix.com/*",
+            "https://netflix.com/*",
+            "https://open.spotify.com/*",
+            "https://www.spotify.com/*",
+            "https://spotify.com/*",
+            "https://www.twitch.tv/*",
+            "https://twitch.tv/*",
+            "https://www.bbc.com/*",
+            "https://bbc.com/*",
+            "https://www.bbc.co.uk/*",
+            "https://bbc.co.uk/*",
+            "https://www.cnn.com/*",
+            "https://cnn.com/*",
+            "https://www.imdb.com/*",
+            "https://imdb.com/*",
+            "https://medium.com/*",
+            "https://www.medium.com/*"
+          ]
+        },
+        {
+          "css": ["webmodding/sites-06-productivity.css"],
+          "matches": [
+            "https://*.wikipedia.org/*",
+            "https://www.notion.so/*",
+            "https://notion.so/*",
+            "https://www.dropbox.com/*",
+            "https://dropbox.com/*",
+            "https://outlook.live.com/*",
+            "https://www.office.com/*",
+            "https://office.com/*",
+            "https://www.microsoft.com/*",
+            "https://microsoft.com/*",
+            "https://login.live.com/*",
+            "https://account.microsoft.com/*",
+            "https://www.yahoo.com/*",
+            "https://yahoo.com/*",
+            "https://mail.yahoo.com/*",
+            "https://news.yahoo.com/*",
+            "https://store.steampowered.com/*",
+            "https://steamcommunity.com/*",
+            "https://help.steampowered.com/*",
+            "https://*.craigslist.org/*",
+            "https://www.indeed.com/*",
+            "https://indeed.com/*"
+          ]
+        }
+      ]
+    }
+  }
+}

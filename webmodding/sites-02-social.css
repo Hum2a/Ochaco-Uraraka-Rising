@@ -1,0 +1,94 @@
+/* Reddit, X/Twitter, Facebook, Instagram, TikTok, Discord, Pinterest, Tumblr, LinkedIn */
+
+:root {
+  --ochaco-pink: #ec407a;
+}
+
+/* Reddit */
+shreddit-app,
+reddit-header-large {
+  --color-neutral-background: color-mix(
+    in srgb,
+    env(-opera-gx-background-color, #030303) 94%,
+    env(-opera-gx-accent-color, var(--ochaco-pink)) 6%
+  );
+  --color-primary-background: color-mix(
+    in srgb,
+    env(-opera-gx-accent-color, var(--ochaco-pink)) 18%,
+    transparent
+  );
+}
+
+faceplate-search-input,
+search-dynamic-id-cache-controller {
+  --color-secondary-background: color-mix(
+    in srgb,
+    env(-opera-gx-accent-color, var(--ochaco-pink)) 12%,
+    transparent
+  ) !important;
+}
+
+/* old.reddit */
+#sr-header-area {
+  border-bottom: 2px solid
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 35%, transparent) !important;
+}
+
+/* X / Twitter / Facebook / Threads — top chrome */
+header[role="banner"],
+[role="banner"] {
+  border-bottom: 1px solid
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 22%, transparent) !important;
+}
+
+[data-testid="primaryColumn"] {
+  border-inline: 1px solid
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 12%, transparent) !important;
+}
+
+[data-testid="SideNav_NewTweet_Button"],
+[data-testid="tweetButtonInline"] {
+  box-shadow: 0 0 0 1px color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 35%, transparent) !important;
+}
+
+/* Instagram */
+body:has(svg[aria-label="Instagram"]) header {
+  border-bottom: 1px solid
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 18%, transparent) !important;
+}
+
+/* TikTok */
+body:has([data-e2e="nav-foryou"]) header,
+body:has([data-e2e="nav-explore"]) header {
+  border-bottom: 1px solid
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 22%, transparent) !important;
+}
+
+/* Discord (marketing site + logged-in web) */
+nav a:hover,
+header a:hover {
+  text-decoration-color: env(-opera-gx-accent-color, var(--ochaco-pink)) !important;
+}
+
+/* Pinterest */
+header[data-test-id="header"] {
+  border-bottom: 1px solid
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 24%, transparent) !important;
+}
+
+/* Tumblr */
+header.tmblr-header {
+  border-bottom: 1px solid
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 20%, transparent) !important;
+}
+
+#search_query {
+  outline-color: env(-opera-gx-accent-color, var(--ochaco-pink)) !important;
+}
+
+/* LinkedIn */
+.global-nav__a11y-menu,
+header.global-nav {
+  border-bottom: 1px solid
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 22%, transparent) !important;
+}

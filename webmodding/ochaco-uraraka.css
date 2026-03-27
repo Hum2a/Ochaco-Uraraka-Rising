@@ -1,0 +1,95 @@
+/* Ochaco Uraraka palette — uses Opera GX theme env() with hex fallbacks */
+
+:root {
+  --ochaco-pink: #ec407a;
+  --ochaco-pink-deep: #880e4f;
+  --ochaco-warm: #d7ccc8;
+  --ochaco-brown-mist: rgba(109, 76, 65, 0.14);
+  --ochaco-pink-mist: rgba(236, 64, 122, 0.11);
+}
+
+@keyframes ochaco-mist-shift {
+  0% {
+    opacity: 0.55;
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.04) translate3d(1.5%, -1%, 0);
+  }
+  100% {
+    opacity: 0.6;
+    transform: scale(1.08) translate3d(-1%, 1.2%, 0);
+  }
+}
+
+html {
+  position: relative;
+}
+
+/* Zero-gravity pink + warm brown atmospheric layer (behind page content) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(80% 60% at 15% 20%, var(--ochaco-pink-mist), transparent 55%),
+    radial-gradient(70% 55% at 85% 75%, var(--ochaco-brown-mist), transparent 50%),
+    linear-gradient(
+      118deg,
+      color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 12%, transparent),
+      color-mix(in srgb, env(-opera-gx-background-color, var(--ochaco-warm)) 18%, transparent)
+    );
+  animation: ochaco-mist-shift 22s ease-in-out infinite alternate;
+}
+
+/* Links & interactive affordances track the mod accent */
+a:any-link {
+  color: env(-opera-gx-accent-color, var(--ochaco-pink));
+}
+
+a:any-link:hover {
+  color: color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 82%, white);
+}
+
+:focus-visible {
+  outline: 2px solid env(-opera-gx-accent-color, var(--ochaco-pink));
+  outline-offset: 2px;
+}
+
+::selection {
+  background: color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 38%, transparent);
+  color: inherit;
+}
+
+/* Scrollbars (Chromium) */
+* {
+  scrollbar-color: color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 55%, transparent)
+    color-mix(in srgb, env(-opera-gx-background-color, var(--ochaco-warm)) 35%, transparent);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: color-mix(in srgb, env(-opera-gx-background-color, var(--ochaco-warm)) 25%, transparent);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    env(-opera-gx-accent-color, var(--ochaco-pink)),
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 55%, var(--ochaco-warm))
+  );
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: env(-opera-gx-accent-color, var(--ochaco-pink));
+}
+
+/* Site-specific accents: sites-01 … sites-06 (scoped by manifest URL patterns). */

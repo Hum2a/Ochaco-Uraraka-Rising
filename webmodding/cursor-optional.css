@@ -1,0 +1,6 @@
+/* Ochaco Uraraka: Rising — optional embedded cursor (not loaded by default manifest) */
+
+html,
+body {
+  cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB20lEQVR4nO3WT0sbQRiA8ectvfbkyYN49+KlIF4KkkSzQhArFqlSpCBFPPkVevHiRYItRRCRKqLQix7qnxjoxYsfoN8koLszHszQ+M7GZpPZXNqBkJ0l8PyyM8su/B//+hB94vfEujViSbAYDKPXVe83IccLfaI1nmC5LazZvgJa4w5zU1jNDeFfARU3PH7/KnzKBeEBRq+rouOmCaoVV4IjPADA69q26Lg7/ln8GBSRCgAYr30VHU8wGLGclpaDIdoCAN7UvomOu/mP0ocgiGcBAIWrHdFxt0mPJ5d6RvwVAFC+2hUdd8cHk+97QnQEAKhc7omOu++9qYWuER0DAN5e7ouOPy6NYWdqvitEJgDAu4vvouNu/qU8lxmRGQCweHEoOu6WZqs8mwnRFQBg+fxI0jalwbIZzXSM6BoAsHJ+It6mbM43okpHiCDP+q3yrG2Ntz5RS3fDNCT+8yF+Mg/2srEZzVgdd1dn7H4wNR4UALARVayOu6UZiQe8eHAAwOdo2rbbF0PJKw/Q0yZMG6W74dR4gvXi1bO6BAc0JGbsftCLGwWontUFerwN2wEaEjMSD3hvVDoO8DIXQHO3P1lz/DjkcQVSbrW0f54fIEO8b4B28b4AnosDPACc9tiMiGsPwAAAAABJRU5ErkJggg==") 0 0, auto !important;
+}

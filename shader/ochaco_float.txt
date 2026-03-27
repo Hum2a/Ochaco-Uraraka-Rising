@@ -1,0 +1,19 @@
+// Ochaco Uraraka — pink quirk shimmer → warm brown
+uniform shader iChunk;
+uniform float2 iChunkSize;
+uniform float2 iChunkOffset;
+uniform float2 iContentSize;
+
+half4 PINK = half4(0.93, 0.25, 0.48, 1);
+half4 BROWN = half4(0.43, 0.30, 0.25, 1);
+
+const float BAND_WIDTH = 200.0;
+const float BLEND_STRENGTH = 0.38;
+
+half4 main(float2 xy) {
+  half4 original = iChunk.eval(xy);
+  float2 content_xy = xy + iChunkOffset;
+  float t = fract(content_xy.x / BAND_WIDTH);
+  half4 gradient = mix(PINK, BROWN, t);
+  return mix(original, gradient, BLEND_STRENGTH);
+}

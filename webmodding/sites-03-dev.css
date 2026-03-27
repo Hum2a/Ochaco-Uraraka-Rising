@@ -1,0 +1,44 @@
+/* GitHub, GitLab, Stack Overflow / Exchange, Hacker News */
+
+:root {
+  --ochaco-pink: #ec407a;
+}
+
+/* GitHub */
+.Header {
+  border-bottom: 1px solid
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 28%, transparent) !important;
+  box-shadow: 0 1px 0 color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 12%, transparent);
+}
+
+.Header-link:focus-visible,
+.js-header-wrapper a:focus-visible {
+  outline-color: env(-opera-gx-accent-color, var(--ochaco-pink)) !important;
+}
+
+/* GitLab */
+.navbar-gitlab,
+header.navbar {
+  border-bottom: 2px solid
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 35%, transparent) !important;
+}
+
+/* Stack Overflow & Stack Exchange */
+.s-topbar {
+  border-bottom: 2px solid
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 40%, transparent) !important;
+}
+
+.s-btn__primary,
+.s-btn__filled {
+  box-shadow: 0 0 0 1px color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 45%, transparent) !important;
+}
+
+/* Hacker News */
+#hnmain > tbody > tr:first-child > td {
+  background: color-mix(
+    in srgb,
+    #ff6600 88%,
+    env(-opera-gx-accent-color, var(--ochaco-pink)) 12%
+  ) !important;
+}

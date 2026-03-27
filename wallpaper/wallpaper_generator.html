@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ochaco Uraraka: Rising — Wallpaper preview</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { width: 1920px; height: 1080px; overflow: hidden; font-family: 'Segoe UI', sans-serif; }
+    .wallpaper {
+      position: relative;
+      width: 100%; height: 100%;
+      background: linear-gradient(90deg, #f48fb1 0%, #ec407a 35%, #8d6e63 70%, #5d4037 100%);
+      background-size: 300% 100%;
+      animation: shift 12s ease-in-out infinite;
+    }
+    .wallpaper::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 30% 50%, rgba(236, 64, 122, 0.25), transparent 55%),
+        radial-gradient(ellipse 55% 45% at 75% 45%, rgba(109, 76, 65, 0.35), transparent 50%);
+    }
+    @keyframes shift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wallpaper"></div>
+</body>
+</html>

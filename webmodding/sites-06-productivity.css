@@ -1,0 +1,67 @@
+/* Wikipedia, Notion, Dropbox, Microsoft 365 / Live, Yahoo, Steam, Craigslist, Indeed */
+
+:root {
+  --ochaco-pink: #ec407a;
+}
+
+/* Wikipedia */
+.mw-page-title-main,
+#firstHeading {
+  text-shadow: 0 0 1px color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 35%, transparent);
+}
+
+.vector-sticky-header,
+.vector-header-container {
+  border-bottom-color: color-mix(
+    in srgb,
+    env(-opera-gx-accent-color, var(--ochaco-pink)) 35%,
+    transparent
+  ) !important;
+}
+
+/* Notion */
+.notion-sidebar-container,
+.notion-topbar {
+  border-color: color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 18%, transparent) !important;
+}
+
+/* Dropbox */
+header[role="banner"] {
+  border-bottom: 1px solid
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 22%, transparent) !important;
+}
+
+/* Microsoft — Outlook, Office, account */
+div[role="banner"],
+.o365shell-header,
+#headerContainer {
+  border-bottom: 1px solid
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 20%, transparent) !important;
+}
+
+/* Yahoo */
+#masterNav,
+header#masterNav {
+  border-bottom: 2px solid
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 28%, transparent) !important;
+}
+
+/* Steam */
+.global_header,
+#store_nav_area,
+.responsive_page_template_content .page_header_ctn {
+  border-bottom: 1px solid
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 26%, transparent) !important;
+}
+
+/* Craigslist */
+.pagecontainer > .bchead {
+  border-bottom: 2px solid env(-opera-gx-accent-color, var(--ochaco-pink)) !important;
+}
+
+/* Indeed */
+nav.icl-GlobalNav,
+header.icl-GlobalHeader {
+  border-bottom: 1px solid
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 24%, transparent) !important;
+}

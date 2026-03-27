@@ -1,0 +1,49 @@
+/* Google Search, Google apps, YouTube */
+
+:root {
+  --ochaco-pink: #ec407a;
+  --ochaco-warm: #d7ccc8;
+}
+
+/* Google Search */
+.RNNXgb,
+.A8SBwf .RNNXgb {
+  border-radius: 28px !important;
+  box-shadow:
+    0 1px 6px color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 24%, transparent),
+    0 0 0 1px color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 12%, transparent) !important;
+}
+
+textarea.gLFyf,
+input.gLFyf {
+  caret-color: env(-opera-gx-accent-color, var(--ochaco-pink)) !important;
+}
+
+/* Gmail, Drive, Calendar, Docs, etc. */
+header[role="banner"] {
+  border-bottom: 1px solid
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 22%, transparent) !important;
+}
+
+/* YouTube */
+ytd-app {
+  --yt-spec-brand-background-solid: color-mix(
+    in srgb,
+    env(-opera-gx-background-color, #0f0f0f) 90%,
+    env(-opera-gx-accent-color, var(--ochaco-pink)) 10%
+  ) !important;
+  --yt-spec-menu-background: color-mix(
+    in srgb,
+    env(-opera-gx-background-color, #282828) 88%,
+    env(-opera-gx-accent-color, var(--ochaco-pink)) 12%
+  ) !important;
+}
+
+ytd-masthead#masthead {
+  border-bottom: 1px solid
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 28%, transparent) !important;
+}
+
+ytd-searchbox #container.ytd-searchbox {
+  border-color: color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 35%, transparent) !important;
+}

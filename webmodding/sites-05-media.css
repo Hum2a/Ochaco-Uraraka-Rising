@@ -1,0 +1,60 @@
+/* Netflix, Spotify, Twitch, BBC, CNN, IMDb, Medium */
+
+:root {
+  --ochaco-pink: #ec407a;
+}
+
+/* Netflix */
+header[class*="header"] {
+  background-image: linear-gradient(
+    to bottom,
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 18%, transparent),
+    transparent
+  ) !important;
+}
+
+/* Spotify */
+.Root__top-container,
+.encore-dark-theme {
+  --background-base: color-mix(
+    in srgb,
+    #121212 92%,
+    env(-opera-gx-accent-color, var(--ochaco-pink)) 8%
+  ) !important;
+}
+
+nav[aria-label="Main"] a[aria-current="page"] {
+  box-shadow: inset 3px 0 0 env(-opera-gx-accent-color, var(--ochaco-pink)) !important;
+}
+
+/* Twitch */
+nav[data-a-target*="top-nav"] {
+  border-bottom: 1px solid
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 30%, transparent) !important;
+}
+
+/* BBC */
+header[data-testid="header-content"],
+.bbc-header {
+  border-bottom: 2px solid
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 30%, transparent) !important;
+}
+
+/* CNN */
+header[data-editable="header"],
+.header__wrapper {
+  border-bottom: 2px solid
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 28%, transparent) !important;
+}
+
+/* IMDb */
+nav#imdbHeader,
+.imdb-header {
+  border-bottom: 2px solid
+    color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 32%, transparent) !important;
+}
+
+/* Medium */
+div[data-testid="headerMediumLogo"] {
+  filter: drop-shadow(0 0 6px color-mix(in srgb, env(-opera-gx-accent-color, var(--ochaco-pink)) 40%, transparent));
+}
